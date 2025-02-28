@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search-container">
+    <input placeholder="你想去哪？" />
+  </view>
+  <view class="slogen-container">
+    <view>去旅行</view>
+    <view>当地人带你一起</view>
+    <view>资深定制师设计行程</view>
+    <view>欧洲当地人带你一起旅行</view>
+  </view>
+  <view class="business-container">
+    <view class="business-item">
+      <image class="business-item-img" src="../../images/deepseek.jpeg" />
+      <view class="business-item-title">包车旅行</view>
+      <view class="business-item-desc">司机兼向导</view>
+    </view>
+    <view class="business-item">
+      <image class="business-item-img" src="../../images/deepseek.jpeg" />
+      <view class="business-item-title">旅行定制</view>
+      <view class="business-item-desc">当地人带你玩</view>
+    </view>
+    <view class="business-item">
+      <image class="business-item-img" src="../../images/deepseek.jpeg" />
+      <view class="business-item-title">智游AI助手</view>
+      <view class="business-item-desc">DeepSeek助力欧洲之行</view>
+    </view>
+  </view>
+  <view class="travel-container">
+    <view class="travel-item">最近热门</view>
+    <view class="travel-item">城市攻略</view>
+    <view class="travel-item">主题旅行</view>
+  </view>
+</view>

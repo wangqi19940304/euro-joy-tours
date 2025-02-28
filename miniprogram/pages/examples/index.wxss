@@ -1,0 +1,16 @@
+/**index.wxss**/
+.container {
+  font-family: PingFang SC;
+}
+
+.title {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.button {
+  
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">我的行程</view>
+  <view class="content">
+    <view class="button">体验定制游，让当地人带你玩</view>
+    <view>发现当地玩乐</view>
+  </view>
+</view>
