@@ -1,16 +1,55 @@
 /**index.wxss**/
 .container {
+  position: relative;
   font-family: PingFang SC;
 }
 
-.title {
+.background {
+  position: absolute;
+  top: 0;
   width: 100%;
+  z-index: -1;
+}
+
+.title {
+  margin-top: 300rpx;
+  margin-left: 30rpx;
+  margin-bottom: 40rpx;
+  width: 100%;
+  color: white;
+  font-size: 40rpx;
+  font-weight: 600;
 }
 
 .content {
+  padding-bottom: 30rpx;
   width: 100%;
+  background-color: white;
+  border-radius: 20rpx 20rpx 0 0;
 }
 
 .button {
-  
+  margin: 70rpx 50rpx;
+  padding: 30rpx 0;
+  border-radius: 10rpx;
+  text-align: center;
+  background-color: #bf2a2e;
+  color: white;
+}
+
+.discovery {
+  border-top: 20rpx solid #f6f6f6;
+}
+
+.discovery-title {
+  margin: 30rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.discovery-content {
+  margin: 0 30rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rpx;
 }

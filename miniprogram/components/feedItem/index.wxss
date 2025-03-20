@@ -1,0 +1,31 @@
+.picture {
+  width: 100%;
+  height: 400rpx;
+  background: gray;
+  border-radius: 20rpx;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.left {
+  display: flex;
+}
+
+.avatar {
+  margin-right: 5rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background: red;
+  border-radius: 50%;
+}
+
+.name {
+  color: #666;
+  font-size: 20rpx;
+}

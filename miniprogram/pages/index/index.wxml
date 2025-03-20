@@ -1,34 +1,70 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="search-container">
-    <input placeholder="你想去哪？" />
-  </view>
-  <view class="slogen-container">
-    <view>去旅行</view>
-    <view>当地人带你一起</view>
-    <view>资深定制师设计行程</view>
-    <view>欧洲当地人带你一起旅行</view>
+  <image class="top-background" src="../../images/home_background.jpeg" mode="aspectFill"/>
+  <view class="title">欧陆悦行</view>
+  <view class="description">Deepseek赋能，一键开启欧洲梦幻游</view>
+  <view class="top-container">
+    <view class="search-container">
+      <image class="search-icon" src="../../images/icons/search.svg" />
+      <text class="search-text">你想去哪？</text>
+    </view>
+    <view class="slogen-container">
+      <image class="slogen-background" src="../../images/banner.jpeg" mode="aspectFill" />
+      <view class="slogen-content">
+        <view class="slogen-title-container">
+          <view class="slogen-title">去旅行</view>
+          <view class="slogen-title">当地人带你一起</view>
+        </view>
+        <view class="slogen-intro">资深定制师设计行程</view>
+        <view class="slogen-intro">欧洲当地人带你一起旅行</view>
+        <view class="slogen-btn">
+          马上为我定制
+          <image class="arrow-right" src="../../images/arrow_right.svg" mode=""/>
+        </view>
+      </view>
+    </view>
   </view>
   <view class="business-container">
-    <view class="business-item">
-      <image class="business-item-img" src="../../images/deepseek.jpeg" />
-      <view class="business-item-title">包车旅行</view>
-      <view class="business-item-desc">司机兼向导</view>
-    </view>
-    <view class="business-item">
-      <image class="business-item-img" src="../../images/deepseek.jpeg" />
-      <view class="business-item-title">旅行定制</view>
-      <view class="business-item-desc">当地人带你玩</view>
-    </view>
-    <view class="business-item">
-      <image class="business-item-img" src="../../images/deepseek.jpeg" />
-      <view class="business-item-title">智游AI助手</view>
-      <view class="business-item-desc">DeepSeek助力欧洲之行</view>
+    <view class="business-content">
+      <view class="business-item" bindtap="gotoTravelPage">
+        <image class="business-item-img" src="../../images/deepseek.jpeg" />
+        <view class="business-item-title">包车旅行</view>
+        <view class="business-item-desc">司机兼向导</view>
+      </view>
+      <view class="business-item" bindtap="gotoCustomPage">
+        <image class="business-item-img" src="../../images/deepseek.jpeg" />
+        <view class="business-item-title">旅行定制</view>
+        <view class="business-item-desc">当地人带你玩</view>
+      </view>
+      <view class="business-item" bindtap="gotoAiPage">
+        <image class="business-item-img" src="../../images/deepseek.jpeg" />
+        <view class="business-item-title">智游AI助手</view>
+        <view class="business-item-desc">DeepSeek助力欧洲之行</view>
+      </view>
     </view>
   </view>
   <view class="travel-container">
-    <view class="travel-item">最近热门</view>
-    <view class="travel-item">城市攻略</view>
-    <view class="travel-item">主题旅行</view>
+    <view class="travel-content">
+      <block wx:key="index" wx:for="{{travelTabList}}" wx:for-item="item">
+        <view 
+          class="travel-item {{travelTabClass === index && 'travel-item-strong'}}"
+          bindtap="onTabClick"
+          data-index="{{index}}"
+        >{{item}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="feed-container">
+    {{/*<view class="feed-content">
+      <feed-item wx:key="content" wx:for="{{[1,2,3]}}" wx:for-item="discovery" />
+    </view>*/}}
+    <view class="city-content">
+      <block wx:key="content" wx:for="{{feedList}}" wx:for-item="feed">
+        <feed-item item="{{feed}}" />
+      </block>
+    </view>
+    {{/*<view class="theme-content">
+      <feed-item wx:key="content" wx:for="{{[1,2,3]}}" wx:for-item="discovery" />
+    </view>*/}}
   </view>
 </view>

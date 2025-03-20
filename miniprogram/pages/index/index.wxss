@@ -3,7 +3,7 @@
 page {
   /* padding-top: 54rpx; */
   padding-bottom: 60rpx;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -11,25 +11,122 @@ page {
   height: 100%;
 }
 
+.top-background {
+  position: absolute;
+  width: 100%;
+  height: 400rpx;
+  border-radius: 40rpx;
+  filter: brightness(0.8);
+  font-family: 'Leefont蒙黑体';
+  z-index: -1;
+}
+
+.title {
+  margin-top: 240rpx;
+  margin-left: 40rpx;
+  color: white;
+  font-size: 48rpx;
+  font-weight: 600;
+}
+
+.description {
+  margin-left: 40rpx;
+  color: white;
+  font-size: 26rpx;
+}
+
+.top-container {
+  margin: 86rpx 30rpx 0 30rpx;
+}
+
 .search-container {
   width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #4f524b;
+  border-radius: 20rpx;
+}
+
+.search-icon {
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.search-text {
+  color: #c9c9c9;
 }
 
 .slogen-container {
+  position: relative;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
   width: 100%;
+  border-radius: 40rpx;
 }
 
-.business-container {
+.slogen-content {
+  padding: 40rpx
+}
+
+.slogen-background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 40rpx;
+  filter: brightness(0.8);
+}
+
+.slogen-title-container {
+  margin-bottom: 10rpx;
+}
+
+.slogen-title {
+  color: #ffffff;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.slogen-intro {
+  font-size: 24rpx;
+  color: #ddd;
+}
+
+.slogen-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 40rpx;
+  padding: 20rpx 10rpx 20rpx 25rpx;
+  border-radius: 12rpx;
+  background: #ff4433;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.arrow-right {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.business-content {
+  padding: 0 20rpx;
   width: 100%;
   display: flex;
   gap: 20rpx;
+  box-sizing: border-box;
 }
 
 .business-item {
   display: flex;
+  padding: 20rpx 0;
   flex-direction: column;
   align-items: center;
   flex: 1;
+  background: white;
   border-radius: 20rpx;
   box-shadow: 0 0 20rpx 2rpx #eee;
 }
@@ -49,11 +146,46 @@ page {
 }
 
 .travel-container {
+  margin-top: 40rpx;
+  width: 100%;
+}
+
+.travel-content {
+  margin-bottom: 30rpx;
+  padding: 0 20rpx;
   width: 100%;
   display: flex;
   gap: 10rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee3de;
 }
 
 .travel-item {
   flex: 1;
+  text-align: center;
+  color: #636063;
+}
+
+.travel-item-strong {
+  color: #0e101c;
+  font-weight: 600;
+}
+
+.travel-item-strong::after {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  margin-top: 15rpx;
+  width: 26rpx;
+  height: 8rpx;
+  background: #0e101c;
+  border-radius: 20rpx;
+  transform: translateX(-50%);
+}
+
+.feed-content, .city-content, .theme-content {
+  margin: 0 20rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rpx;
 }

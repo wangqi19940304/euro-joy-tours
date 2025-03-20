@@ -1,8 +1,18 @@
 <!--index.wxml-->
 <view class="container">
+  <image class="background" src="../../images/travel_background.jpeg" mode="aspectFill"/>
   <view class="title">我的行程</view>
   <view class="content">
-    <view class="button">体验定制游，让当地人带你玩</view>
-    <view>发现当地玩乐</view>
+    <view class="button" bindtap="onCusClick">体验定制游，让当地人带你玩</view>
+    <view class="discovery">
+      <view class="discovery-title">
+        发现当地玩乐
+      </view>
+      <view class="discovery-content">
+        <block wx:key="content" wx:for="{{discoveryList}}" wx:for-item="discovery">
+          <discovery-item item="{{discovery}}" />
+        </block>
+      </view>
+    </view>
   </view>
 </view>

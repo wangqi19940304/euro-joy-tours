@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "欧陆悦行",
   "usingComponents": {
-    "cloud-tip-modal": "/components/cloudTipModal/index"
+    "discovery-item": "/components/discoveryItem/index"
   }
 }

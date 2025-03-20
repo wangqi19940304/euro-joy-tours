@@ -1,29 +1,51 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="title">业务示例</view>
-  <view class="top_tip">使用云开发快速实现业务功能</view>
-  <view class="power" wx:key="title" wx:for="{{businessList}}" wx:for-item="business">
-    <view class="power_info" data-index="{{index}}" data-type="{{ business.type }}" bindtap="onClickBusinessInfo">
-      <view class="power_info_text">
-        <view class="power_info_text_title">
-          {{business.title}}
-          <view class="power_info_text_tag" wx:if="{{business.tag}}">{{business.tag}}</view>
-        </view>
-        <view class="power_info_text_tip">{{business.tip}}</view>
-      </view>
-      <image wx:if="{{!business.showItem && business.item.length}}" class="power_info_more" src="../../images/arrow.svg"></image>
-      <image wx:if="{{business.showItem && business.item.length}}" class="power_info_less" src="../../images/arrow.svg"></image>
-      <image wx:if="{{!business.item.length}}" class="power_item_icon" src="../../images/arrow.svg"></image>
-    </view>
-    <view wx:if="{{business.showItem}}">
-      <view wx:key="title" wx:for="{{business.item}}">
-        <view class="line"></view>
-        <view class="power_item" bindtap="jumpBusinessPage" data-title="{{business.title}}" data-level="{{item.level}}" data-subtitle="{{item.title}}" data-type="{{ item.type }}">
-          <view class="power_item_title">{{item.title}}</view>
-          <image class="power_item_icon" src="../../images/arrow.svg"></image>
-        </view>
-      </view>
+  <view class="title">包车旅行</view>
+  <view class="top_tip">一天起包 / 全欧洲可订 / 含当地向导</view>
+  <view>一价全含 / 全称中文服务 / 覆盖1300城市</view>
+  <view>起点</view>
+  <view>开始时间</view>
+  <view>包车+当地向导</view>
+  <view>立即包车</view>
+  <view>24小时行程管家</view>
+  <view>行程自由安排</view>
+  <view>当地人全程中文沟通</view>
+  <view>
+    <view>deepseek 战略投资</view>
+    <view>致力于让更多人，更轻松地与更广阔的世界发生连接</view>
+  </view>
+  <view>全球丰富车型可选</view>
+  <view>*支持家庭、小团包车旅行</view>
+  <view>
+    <view>
+      <view>舒适7座</view>
+      <view>乘7人 3行李</view>
     </view>
   </view>
-  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+  <view>包车增值服务</view>
+  <view>*增值服务以具体行程为准</view>
+  <view>
+    <view>儿童座椅</view>
+  </view>
+  <view>欧陆悦行优势</view>
+  <view>出境包车服务由欧陆悦行覆盖欧洲1300多个城市</view>
+  <view>超过11万+当地人提供服务</view>
+  <view class="advantage">
+    <view>
+      <view>行程管家</view>
+      <view>24小时中文服务，全球不怕时差</view>
+    </view>
+    <view>
+      <view>自由安排行程</view>
+      <view>单程/跨城，随心所欲，自由安排</view>
+    </view>
+    <view>
+      <view>一价全含</view>
+      <view>透明价格，性价比保障</view>
+    </view>
+    <view>
+      <view>当地人带你玩</view>
+      <view>真正的深度体验</view>
+    </view>
+  </view>
 </view>

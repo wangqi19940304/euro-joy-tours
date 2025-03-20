@@ -1,0 +1,40 @@
+<!--pages/travelCustomization/index.wxml-->
+<view class="container">
+  <view class="title">
+    <view>旅行定制</view>
+    <view>25,538,106位用户定制行程</view>
+    <view>欧陆悦行已经为</view>
+  </view>
+  <view>
+    <view>
+      <view>当地人带玩</view>
+      <view>超赞当地人+中文服务+当地玩法体验+机酒代订</view>
+    </view>
+    <view>覆盖1300个欧洲目的地定制</view>
+    <view>
+      <view>想去</view>
+      <view>法国</view>
+    </view>
+    <view>最近30天最热门目的地</view>
+    <view>
+      英国
+    </view>
+    <view>
+      法国
+    </view>
+    <view>
+      意大利
+    </view>
+    <view>
+      爱尔兰
+    </view>
+    <view>现在为我定制</view>
+    <view>尾号1737杠杆完成了奥地利旅行定制方案</view>
+  </view>
+  <view>
+    <view>3月热门</view>
+    <view>
+      图片流
+    </view>
+  </view>
+</view>

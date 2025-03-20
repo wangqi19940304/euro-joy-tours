@@ -1,0 +1,36 @@
+/* components/discoveryItem/index.wxss */
+.picture {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+.picture-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 5rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.name {
+  color: #666;
+  font-size: 22rpx;
+}

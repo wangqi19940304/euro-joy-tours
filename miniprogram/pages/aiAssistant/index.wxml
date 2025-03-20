@@ -1,0 +1,7 @@
+<!--pages/aiAssistant/index.wxml-->
+<view class="container">
+  <view class="title">智游AI助手</view>
+  <view class="slogen">欧陆悦行+Deepseek，</view>
+  <view class="slogen">解锁出行新智境，每程皆不凡。</view>
+  <input type="text" placeholder="发消息..."/>
+</view>

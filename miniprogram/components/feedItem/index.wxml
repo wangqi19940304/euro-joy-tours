@@ -1,0 +1,8 @@
+<view class="card">
+  <view class="picture">
+    
+  </view>
+  <view class="content">
+    {{item.title}}
+  </view>
+</view>

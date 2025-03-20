@@ -1,28 +1,24 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/goods-list/index",
     "pages/examples/index",
+    "pages/index/index",
+    "pages/business/index",
     "pages/user-center/index",
-    "pages/exampleDetail/index",
-    "pages/deployService/index",
-    "pages/updateRecord/index",
-    "pages/updateRecordResult/index",
+    "pages/goods-list/index",
+    "pages/aiAssistant/index",
+    "pages/travelCustomization/index",
     "pages/updateRecordSuccess/index",
     "pages/sumRecord/index",
     "pages/sumRecordResult/index",
     "pages/web/index",
     "pages/cloudbaseModuleDetail/index",
     "pages/cloudbaseModuleInstallTips/index",
-    "pages/cloudbaseModuleGuide/index",
-    "pages/business/index"
+    "pages/cloudbaseModuleGuide/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "欧陆悦行",
-    "navigationBarTextStyle": "black"
+    "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",

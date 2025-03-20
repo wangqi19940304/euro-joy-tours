@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "cloud-tip-modal": "/components/cloudTipModal/index"
+    "feed-item": "/components/feedItem/index"
   },
   "navigationBarBackgroundColor": "#fff"
 }
