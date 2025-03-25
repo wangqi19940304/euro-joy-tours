@@ -1,26 +1,20 @@
-// pages/travelCustomization/index.js
+// pages/citySelect/index.js
+const { CityData } = require("./constants");
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    randomPhone: '',
-    hotDestination: ['英国', '法国', '意大利', '爱尔兰'],
-  },
-
-  generateRandomNumber() {
-    const num = Math.floor(Math.random() * 9000) + 1000;
-    return num.toString().padStart(4, '0');
+    cityList: CityData
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      randomPhone: this.generateRandomNumber()
-    })
+
   },
 
   /**

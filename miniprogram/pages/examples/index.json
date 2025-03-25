@@ -1,5 +1,4 @@
 {
-  "navigationBarTitleText": "欧陆悦行",
   "usingComponents": {
     "discovery-item": "/components/discoveryItem/index"
   }

@@ -47,6 +47,12 @@ Page({
     })
   },
 
+  gotoSelectPage() {
+    wx.navigateTo({
+      url: '/pages/aiAssistant/index',
+    })
+  },
+
   onTabClick(event) {
     const index = event.currentTarget.dataset.index;
     this.setData({

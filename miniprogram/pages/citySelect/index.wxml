@@ -1,0 +1,26 @@
+<!--pages/citySelect/index.wxml-->
+<view class="container">
+  <view class="left">
+    <view class="left-item">
+      欧洲
+    </view>
+  </view>
+  <view class="right">
+    <block wx:key="country" wx:for="{{cityList}}" wx:for-item="countryItem">
+      <view class="right-country-item">
+        <image class="right-country-pic" src="{{countryItem.picture}}" mode="aspectFill" 
+        style="{{countryItem.style}}"/>
+        <view class="right-country-name">{{countryItem.name}}</view>
+        <view class="right-country-eng">{{countryItem.englishName}}</view>
+      </view>
+      <view class="right-city-group" >
+        <block wx:key="city" wx:for="{{countryItem.city}}" wx:for-item="cityItem">
+          <view class="right-city-item">
+            <image class="right-city-pic" src="{{cityItem.picture}}" mode="aspectFill" style="{{cityItem.style}}"/>
+            {{cityItem.name}}
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

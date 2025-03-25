@@ -1,40 +1,73 @@
 <!--pages/travelCustomization/index.wxml-->
 <view class="container">
-  <view class="title">
-    <view>旅行定制</view>
-    <view>25,538,106位用户定制行程</view>
-    <view>欧陆悦行已经为</view>
+  <image class="background" src="../../images/cus_background.jpeg" mode="aspectFill"/>
+  <view class="header">
+    <view class="title">旅行定制</view>
+    <view class="intro">欧陆悦行已经为</view>
+    <view class="intro">25,538位用户定制行程</view>
+  </view>
+  <view class="custom">
+    <view class="custom-header">
+      <view class="custom-header-label">
+        <image class="custom-header-ear" src="../../images/ear.svg" mode=""/>
+        <text>当地人带玩</text>
+        <image class="custom-header-ear-right" src="../../images/ear.svg" mode=""/>
+      </view>
+      <view class="custom-header-title">超赞当地人+中文服务+当地玩法体验+机酒代订</view>
+      <image class="custom-header-arrow" src="../../images/arrow_right_cus.svg" mode=""/>
+    </view>
+    <view class="custom-content">
+      <view class="custom-content-title-cus">覆盖1300个欧洲目的地定制</view>
+      <view class="custom-content-search">
+        <view>想去</view>
+        <image class="custom-comtent-search-arrow" src="../../images/arrow_right_search.svg" mode=""/>
+        <view>法国</view>
+      </view>
+      <view class="custom-content-title-hot">最近30天最热门目的地</view>
+      <view class="custom-content-hot">
+        <view class="custom-content-hot-label" wx:key="index" wx:for="{{hotDestination}}" wx:for-item="hot">
+          <view class="hot-first" wx:if="{{index === 0}}">
+            热门榜NO.1
+          </view>
+          <image class="fire" src="../../images/fire.svg" />
+          {{hot}}
+        </view>
+      </view>
+      <view class="custom-content-btn">现在为我定制</view>
+      <view class="custom-content-tip">
+        <image class="custom-content-tip-avatar" src="../../images/boy.jpeg" mode=""/>
+        尾号{{randomPhone}}刚刚完成了
+        <text class="custom-content-tip-schema">爱尔兰旅行定制方案</text>
+      </view>
+    </view>
   </view>
   <view>
-    <view>
-      <view>当地人带玩</view>
-      <view>超赞当地人+中文服务+当地玩法体验+机酒代订</view>
+    <view class="hot-tab">
+      <view class="hot-tab-item hot-tab-item-star-active">
+        <image class="hot-tab-item-star" src="../../images/star.svg" />3月热门
+      </view>
+      <view class="hot-tab-item" wx:key="index" wx:for="{{hotDestination}}" wx:for-item="hot">
+        {{hot}}
+      </view>
     </view>
-    <view>覆盖1300个欧洲目的地定制</view>
-    <view>
-      <view>想去</view>
-      <view>法国</view>
-    </view>
-    <view>最近30天最热门目的地</view>
-    <view>
-      英国
-    </view>
-    <view>
-      法国
-    </view>
-    <view>
-      意大利
-    </view>
-    <view>
-      爱尔兰
-    </view>
-    <view>现在为我定制</view>
-    <view>尾号1737杠杆完成了奥地利旅行定制方案</view>
   </view>
-  <view>
-    <view>3月热门</view>
-    <view>
-      图片流
+  <view class="dark" />
+  <view class="cus-model">
+    <image class="cus-background-star" src="../../images/star_cus.svg" />
+    <view class="cus-model-title-container">
+      <view class="cus-model-title">现在开始</view>
+      <view class="cus-model-title">为您匹配<text class="cus-model-title-name">定制师</text>帮您规划！</view>
     </view>
+    <view class="cus-model-content">
+      <view class="cus-model-content-item">
+        <image class="cus-model-right" src="../../images/right.svg" mode=""/>
+        收到你的需求，开始匹配定制师...
+      </view>
+      <view class="cus-model-content-item">
+        <image class="cus-model-right" src="../../images/right.svg" mode=""/>
+        已为您匹配到最适合日本的定制师，现在我们为您和定制师建群。
+      </view>
+    </view>
+    <view class="cus-model-btn">预计 1 秒内完成</view>
   </view>
 </view>

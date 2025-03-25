@@ -1,0 +1,21 @@
+<!--pages/wechat/index.wxml-->
+<view class="container">
+  <view class="title">添加欧陆悦行专属定制师</view>
+  <view class="intro">免费定制行程方案</view>
+  <view class="info-container">
+    <view class="avatar-container">
+      <image class="avatar" src="../../images/custom_avatar.jpeg" mode=""/>
+      <view class="online">
+        <view class="green-dot" />
+        在线
+      </view>
+    </view>
+    <view class="information-item"><image class="check" src="../../images/check.svg" />不跟团、不拼陌生人，私家专属行程定制</view>
+    <view class="information-item"><image class="check" src="../../images/check.svg" />行程规划、机票、酒店、用车、当地玩乐一站式全程方案定制</view>
+    <view class="code-container">
+      <image class="code" src="../../images/code.jpg" mode=""/>
+    </view>
+    <view class="save-code"><image class="wechat-img" src="../../images/wechat.svg" />长按保存二维码，添加行程定制师微信</view>
+  </view>
+  <view class="tip">添加定制师微信快速定制行程</view>
+</view>

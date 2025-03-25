@@ -4,7 +4,7 @@
   <view class="title">欧陆悦行</view>
   <view class="description">Deepseek赋能，一键开启欧洲梦幻游</view>
   <view class="top-container">
-    <view class="search-container">
+    <view class="search-container" bindtap="gotoSelectPage">
       <image class="search-icon" src="../../images/icons/search.svg" />
       <text class="search-text">你想去哪？</text>
     </view>
@@ -17,7 +17,7 @@
         </view>
         <view class="slogen-intro">资深定制师设计行程</view>
         <view class="slogen-intro">欧洲当地人带你一起旅行</view>
-        <view class="slogen-btn">
+        <view class="slogen-btn" bindtap="gotoCustomPage">
           马上为我定制
           <image class="arrow-right" src="../../images/arrow_right.svg" mode=""/>
         </view>

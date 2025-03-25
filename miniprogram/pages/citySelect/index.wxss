@@ -1,0 +1,90 @@
+/* pages/citySelect/index.wxss */
+page {
+  background: white;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left {
+  flex: 0 0 100px;
+  background: #f6f6f6;
+}
+
+.left-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  background: #fff;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.left-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 6rpx;
+  height: 100%;
+  background: #bf2b2f;
+  border-radius: 0 10rpx 10rpx 0;
+}
+
+.right {
+  overflow-y: auto;
+  flex: 1;
+  padding: 30rpx;
+}
+
+.right-country-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  height: 180rpx;
+  color: #ffffff;
+  border-radius: 20rpx;
+}
+
+.right-country-pic {
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
+.right-country-name {
+  font-size: 28rpx;
+}
+
+.right-country-eng {
+  font-size: 20rpx;
+}
+
+.right-city-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.right-city-item {
+  position: relative;
+  overflow: hidden;
+  padding: 20rpx;
+  height: 180rpx;
+  color: #ffffff;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+
+.right-city-pic {
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.8);
+}
