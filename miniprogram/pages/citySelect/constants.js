@@ -83,8 +83,8 @@ const CityData = [
   {
     name: '意大利',
     englishName: 'Italy',
-    picture: '../../images/bigben.jpeg',
-    style: 'top: -75rpx; left: -35rpx',
+    picture: '../../images/italy.webp',
+    style: 'top: -235rpx; left: 0rpx',
     city: [{
       name: '罗马',
       picture: '../../images/bigben.jpeg',

@@ -24,21 +24,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/icons/home.png",
-        "selectedIconPath": "images/icons/home-active.png"
+        "text": "首页"
       },
       {
         "pagePath": "pages/examples/index",
-        "text": "行程",
-        "iconPath": "images/icons/examples.png",
-        "selectedIconPath": "images/icons/examples-active.png"
+        "text": "行程"
       },
       {
         "pagePath": "pages/user-center/index",
-        "text": "我的",
-        "iconPath": "images/icons/usercenter.png",
-        "selectedIconPath": "images/icons/usercenter-active.png"
+        "text": "我的"
       }
     ]
   }

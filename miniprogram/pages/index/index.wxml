@@ -5,7 +5,7 @@
   <view class="description">Deepseek赋能，一键开启欧洲梦幻游</view>
   <view class="top-container">
     <view class="search-container" bindtap="gotoSelectPage">
-      <image class="search-icon" src="../../images/icons/search.svg" />
+      <image class="search-icon" src="../../images/search.svg" />
       <text class="search-text">你想去哪？</text>
     </view>
     <view class="slogen-container">
