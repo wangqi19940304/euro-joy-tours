@@ -23,6 +23,21 @@ const CityData = [
     }]
   },
   {
+    name: '爱尔兰',
+    englishName: 'Ireland',
+    picture: '../../images/ireland.webp',
+    style: 'top: -75rpx; left: -35rpx',
+    city: [{
+      name: '都柏林',
+      picture: '../../images/bigben.jpeg',
+      style: 'width: 250rpx; height: 250rpx; top: 0rpx; left: 0rpx',
+    }, {
+      name: '科克',
+      picture: '../../images/bigben.jpeg',
+      style: 'width: 250rpx; height: 250rpx; top: 0rpx; left: 0rpx',
+    }]
+  },
+  {
     name: '法国',
     englishName: 'France',
     picture: '../../images/france.jpeg',
@@ -66,21 +81,6 @@ const CityData = [
     }]
   },
   {
-    name: '爱尔兰',
-    englishName: 'Ireland',
-    picture: '../../images/bigben.jpeg',
-    style: 'top: -75rpx; left: -35rpx',
-    city: [{
-      name: '都柏林',
-      picture: '../../images/bigben.jpeg',
-      style: 'width: 250rpx; height: 250rpx; top: 0rpx; left: 0rpx',
-    }, {
-      name: '科克',
-      picture: '../../images/bigben.jpeg',
-      style: 'width: 250rpx; height: 250rpx; top: 0rpx; left: 0rpx',
-    }]
-  },
-  {
     name: '意大利',
     englishName: 'Italy',
     picture: '../../images/bigben.jpeg',
@@ -102,7 +102,7 @@ const CityData = [
       picture: '../../images/bigben.jpeg',
       style: 'top: -75rpx; left: -35rpx',
     }, {
-      name: '比萨',
+      name: '五渔村',
       picture: '../../images/bigben.jpeg',
       style: 'top: -75rpx; left: -35rpx',
     }]
