@@ -5,7 +5,7 @@
   </view>
   <view class="content">
     <view class="left">
-      <image class="avatar" src="{{item.gender === 1 ? '../../images/boy.jpeg' : '../../images/girl.jpeg'}}" mode=""/>
+      <image class="avatar" src="{{item.gender === 1 ? '../../images/boy.jpg' : '../../images/girl.jpg'}}" mode=""/>
       <view class="name">{{item.name}}</view>
     </view>
     <view>{{item.collect}}人收藏</view>

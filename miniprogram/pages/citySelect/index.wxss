@@ -70,7 +70,7 @@ page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 0rpx;
 }
 
 .right-city-item {

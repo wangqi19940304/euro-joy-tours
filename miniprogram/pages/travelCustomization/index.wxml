@@ -35,7 +35,7 @@
       </view>
       <view class="custom-content-btn">现在为我定制</view>
       <view class="custom-content-tip">
-        <image class="custom-content-tip-avatar" src="../../images/boy.jpeg" mode=""/>
+        <image class="custom-content-tip-avatar" src="../../images/boy.jpg" mode=""/>
         尾号{{randomPhone}}刚刚完成了
         <text class="custom-content-tip-schema">爱尔兰旅行定制方案</text>
       </view>
